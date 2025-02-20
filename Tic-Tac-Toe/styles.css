@@ -1,0 +1,98 @@
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper
+{width: 100vw; height: 100vh;
+    background-image: conic-gradient(
+        from 0deg,
+        #000000,  /* Black */
+        #2c3e50,  /* Dark Blue */
+        #8b0000,  /* Dark Red */
+        #006400,  /* Dark Green */
+        #000000   /* Back to Black */
+    );
+     display: grid;
+     place-items: center;
+}
+
+.info
+{
+    color: white;
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    border-radius:1rem;
+    transform: translateX(-50%);
+    background-color: rgba(250, 95, 95, 0.25);
+    backdrop-filter: blur(5px);
+    border: 1px solid black;
+    padding: 0.5rem 3rem;
+    text-align: center;
+}
+.ttt
+{
+max-width: 20rem;
+    border-radius:1rem;
+    width: 90%;
+    border: 1px solid black;
+    padding: 2rem;
+    display: grid;
+    background-color: rgba(255, 255, 255, 0.15);
+    grid-template-columns: repeat(3,1fr);
+    aspect-ratio: 1/1;
+}
+.box
+{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1/1;
+    font-size: 3rem;
+    color: white;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+
+}
+.box1,.box2,.box4,.box5
+{
+   border-right: 2px solid white;
+   border-bottom: 2px solid white;
+
+}
+.box3,.box6
+{
+    border-bottom: 2px solid white;
+}
+.box7,.box8
+{
+    border-right: 2px solid white ;
+}
+.btn
+{
+
+cursor: pointer;
+color: white;
+position: absolute;
+bottom: 3rem;
+left: 50%;
+transform: translateX(-50%);
+background-color: rgba(250, 95, 95, 0.25);
+ padding: 0.5rem 2rem ;
+ border: 1px solid grey;
+ border-radius: 2rem;
+ /* display: none; */
+}
+.btn.active
+{
+    display: flex;
+}
+.win
+{
+    background-color: green;
+}
